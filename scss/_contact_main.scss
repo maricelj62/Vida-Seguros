@@ -1,0 +1,47 @@
+/*-------------------------------
+# Contact Section
+--------------------------------*/
+#contact-main {
+  background: #f7f7f7;
+  padding: 60px 0;
+
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
+
+  .info {
+    color: $heading-color;
+
+    .col-md-4 {
+      text-align: center;
+
+      i {
+        font-size: 28px;
+        color: $verde-claro;
+
+        @media (max-width: 450px) {
+          font-size: 20px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        color: #277249;
+
+        @media (max-width: 450px) {
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+
+        @media (max-width: 992px) {
+          margin-bottom: 30px;
+        }
+
+      }
+
+    .fa {
+      margin-right: 10px;
+    }
+  }
+  }
+}

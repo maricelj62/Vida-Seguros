@@ -1,0 +1,83 @@
+/*--------------------------------------------------------------
+# Quienes somos
+--------------------------------------------------------------*/
+#about {
+
+    margin-top: 60px;
+    /*color: #9699a6;*/
+    color: $gris-oscuro;
+    font-family: $accent-font;
+
+    .about-info {
+        margin-top: 30px;
+        margin-bottom: 20px;;
+    }
+
+    .section-padding{
+        padding: 60px 0px;
+        margin-top: 40px;
+    }
+
+    .header-h {
+        color: $verde-oscuro;
+        font-size: 36px;
+        /*font-family: 'Satisfy', sans-serif;*/
+        /*font-family: 'Ubuntu', sans-serif;*/
+        font-family: $heading-font;
+        font-weight: 800;
+        /*text-transform: uppercase;*/
+    }
+
+    .heading{
+        /*font-family: 'Satisfy', sans-serif;*/
+        font-family: $heading-font;
+        color: $verde-oscuro;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    .details-list{
+        margin-top: 20px;
+    }
+    .details-list ul li i {
+        margin-right: 10px;
+        color: $verde-oscuro;
+    }
+
+    ol, ul {
+        list-style: none;
+    }
+
+    .details-list ul li i {
+        margin-right: 10px;
+        color: $verde-oscuro;
+    }
+
+    @media (min-width: 20px) and (max-width: 450px) {
+
+    .header-h {
+        font-size: 28px;
+    }
+
+    body{
+        font-size: 14px;
+    }
+
+
+/*
+    .about-info, .mr-15{
+        margin-bottom: 15px;
+    }*/
+}
+    
+
+  
+}

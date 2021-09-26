@@ -1,0 +1,109 @@
+/*--------------------------------------------------------------
+# Welcome
+--------------------------------------------------------------*/
+#welcome {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bg-welcome.jpg) top center fixed;
+  background-size: cover;
+
+  .welcome-logo {
+    margin: 20px;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .welcome-container {
+    background: rgba(255,255,255,0.60);
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  h2 {
+    color: rgb(110,111,113);
+    margin-bottom: 50px;
+    font-size: 46px;
+    font: normal 'Dancing Script', sans-serif;
+
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 30px;
+      .rotating {
+        display: block;
+      }
+    }
+  }
+
+  .rotating > .animated {
+    display: inline-block;
+  }
+
+  .actions {
+    
+    a {
+      font-family: $heading-font;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 8px 20px;
+      border-radius: 2px;
+      transition: 0.5s;
+      margin: 10px;
+    }
+
+  }
+
+  .btn-get-started {
+    background: $accent-color;
+    border: 2px solid $accent-color;
+    color: #fff;
+    &:hover {
+      background: none;
+      border: 2px solid #fff;
+      color: #fff;
+      text-shadow: 1px 1px 10px #000000;
+    }
+  }
+/*
+  @media screen and (max-width: 1200px) {
+    height: 60vh;
+    background-size: 100% 60vh;
+
+    .welcome-logo {
+      margin: 20px;
+      margin-left: 125px;
+      img {
+        max-width: 60%;
+      }
+    }
+
+    h2 {
+      margin-left: 90px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    height: 50vh;
+    background-size: 100% 50vh;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 40vh;
+    background-size: 100% 40vh;
+  }
+
+  @media screen and (max-width: 576px) {
+    height: 30vh;
+    background-size: 100% 30vh;
+  }
+*/
+}

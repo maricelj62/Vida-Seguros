@@ -1,0 +1,149 @@
+/* --- Servicios --- */
+.servicios {
+
+		margin-top: 20px;
+		/*font-family:'Montserrat',sans-serif;*/
+
+		p {
+		font-family: $accent-font;
+		font-size:18px;
+		line-height:1.7;
+		/*color:#777;*/
+		color: $gris-oscuro;
+		font-weight:500;
+		/*overflow-x:hidden;*/
+		}
+
+
+	h1,h2,h3,h4,h5,h6 {
+		color: $verde-oscuro;
+		font-size: 36px;
+		font-family: $heading-font;
+        font-weight: 800;
+        /*text-transform: uppercase;*/
+		text-align: center;
+		/*color:#333;*/
+
+		@media (min-width: 20px) and (max-width: 450px) {
+				
+			font-size: 28px;
+			
+		}
+	}
+
+
+	/*.referencias {
+		font-family: 'Shadows Into Light', cursive;
+		text-align: center;
+		.row {
+			justify-content: right;
+			justify-self: right;
+		}
+	}*/
+
+	
+.hi-icon-effect {
+	padding-bottom:30px;
+	padding-left:10px; 
+	padding-right:10px;
+
+}
+
+.hi-icon-effect:hover {	
+	-webkit-transition: color 300ms, background-color 300ms;
+  -moz-transition: color 300ms, background-color 300ms;
+  -o-transition:  color 300ms, background-color 300ms;
+  transition:  color 300ms, background-color 300ms;
+}
+
+.hi-icon-effect i.fa:hover {
+	background:#fff;
+	/*color: #92DD03;*/
+	color: $verde-claro;
+	-webkit-transition: color 300ms, background-color 300ms;
+  -moz-transition: color 300ms, background-color 300ms;
+  -o-transition:  color 300ms, background-color 300ms;
+  transition:  color 300ms, background-color 300ms;
+}
+
+.hi-icon-effect i {
+	font-size:30px;
+	margin-top:40px;
+	margin-bottom:30px;
+	color:#fff;
+	padding:50px;
+	/*background:#92DD03;*/
+	background: $verde-claro;
+	border-radius:50%;
+}
+
+blockquote {
+	font-style:italic;
+	margin:0 0 0px 0;
+	padding:20px 70px 10px;
+	position:relative;
+	text-align: center;
+	font-size:14px;
+	border:0;
+}
+blockquote:before {
+	display:blockblockquote;
+	content:"\201C";
+	font-size:100px;
+	position:absolute;
+	/*text-align: center;*/
+	left:220px;
+    top:-30px;
+	/*color:#92DD03 ;*/
+	color: $verde-claro;
+	font-family:Georgia;
+
+	@media (max-width: 576px) {
+		font-size: 50px;
+		left: 0px;
+		top:-20px;
+	}
+
+	@media (max-width: 768px) {
+		left:10px;
+	  }
+
+	@media (max-width: 992px) {
+		left: 5px;
+	}
+
+	@media (max-width: 1200px) {
+		left: 120px;
+	}
+
+}
+blockquote cite {
+	/*color:#92DD03;*/
+	color: $verde-oscuro;
+	font-size:14px;
+	display:block;
+	margin-top:5px;
+	text-align:center;
+
+	.fa {
+		color: $verde-claro;
+	}
+}
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+}
+
+#separador {
+    width: 500px;
+    height: 3px;
+    background: $accent-color;
+    margin: 0 auto;
+    margin-top: 50px;
+	margin-bottom: 20px;
+	
+	@media (max-width: 768px) {
+		width: 200px;
+	  }
+	
+}

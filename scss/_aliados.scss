@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------
+# Aliados
+--------------------------------------------------------------*/
+
+#partner {
+
+    .title-aliados {
+        margin-bottom: 10px;
+        margin-top: 60px;
+
+        #h-bold {
+            color: $verde-oscuro;
+            font-size: 36px;
+            font-family: $heading-font;
+            font-weight: 800;
+            /*text-transform: uppercase;*/
+
+            @media (min-width: 20px) and (max-width: 450px) {
+				
+                font-size: 28px;
+                
+            }
+    }
+
+    img {
+        width: 180px;
+}
+    
+}
+
+@media (max-width: 450px) {
+    img {
+        width: 120px;
+    }
+}
+
+}

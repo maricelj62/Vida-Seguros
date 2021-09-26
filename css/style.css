@@ -1,0 +1,1663 @@
+@charset "UTF-8";
+/*$accent-color: #03C4EB;*/
+/*$accent-color: #92DD03;*/
+/*$accent-color: #03B5C4;*/
+/*$accent-color: #3EBCB7;*/
+/*$accent-color: #027873;*/
+/*$accent-color: #059b91;*/
+/*$heading-font: 'Raleway', sans-serif;*/
+/*--------------------------------------------------------------
+# Welcome
+--------------------------------------------------------------*/
+/* line 4, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_welcome.scss */
+#welcome {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bg-welcome.jpg) top center fixed;
+  background-size: cover;
+  /*
+  @media screen and (max-width: 1200px) {
+    height: 60vh;
+    background-size: 100% 60vh;
+
+    .welcome-logo {
+      margin: 20px;
+      margin-left: 125px;
+      img {
+        max-width: 60%;
+      }
+    }
+
+    h2 {
+      margin-left: 90px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    height: 50vh;
+    background-size: 100% 50vh;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 40vh;
+    background-size: 100% 40vh;
+  }
+
+  @media screen and (max-width: 576px) {
+    height: 30vh;
+    background-size: 100% 30vh;
+  }
+*/
+}
+
+/* line 11, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_welcome.scss */
+#welcome .welcome-logo {
+  margin: 20px;
+}
+
+/* line 13, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_welcome.scss */
+#welcome .welcome-logo img {
+  max-width: 100%;
+}
+
+/* line 18, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_welcome.scss */
+#welcome .welcome-container {
+  background: rgba(255, 255, 255, 0.6);
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 27, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_welcome.scss */
+#welcome h2 {
+  color: #6e6f71;
+  margin-bottom: 50px;
+  font-size: 46px;
+  font: normal 'Dancing Script', sans-serif;
+}
+
+@media (max-width: 768px) {
+  /* line 27, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_welcome.scss */
+  #welcome h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  /* line 38, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_welcome.scss */
+  #welcome h2 .rotating {
+    display: block;
+  }
+}
+
+/* line 44, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_welcome.scss */
+#welcome .rotating > .animated {
+  display: inline-block;
+}
+
+/* line 50, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_welcome.scss */
+#welcome .actions a {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+/* line 65, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_welcome.scss */
+#welcome .btn-get-started {
+  background: #FF8600;
+  border: 2px solid #FF8600;
+  color: #fff;
+}
+
+/* line 69, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_welcome.scss */
+#welcome .btn-get-started:hover {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  text-shadow: 1px 1px 10px #000000;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/* line 4, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_header.scss */
+#header {
+  background: #fff;
+  padding: 20px 0;
+  height: 90px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* line 12, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_header.scss */
+#header #logo {
+  float: left;
+  /*h1 {
+      font-size: 36px;
+      margin: 0;
+      padding: 6px 0;
+      line-height: 1;
+      font-family: $accent-font;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    
+    h1 a, h1 a:hover {
+      color: #fff;
+    }*/
+}
+
+/* line 29, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_header.scss */
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 50px;
+}
+
+@media (max-width: 992px) {
+  /* line 4, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_header.scss */
+  #header {
+    height: 80px;
+  }
+  /* line 38, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_header.scss */
+  #header #logo {
+    /*  h1 {
+        font-size: 26px;
+      }*/
+  }
+  /* line 43, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_header.scss */
+  #header #logo img {
+    max-height: 40px;
+  }
+}
+
+/* line 48, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_header.scss */
+.is-sticky #header {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+/* line 7, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 13, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+/* line 21, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+/* line 26, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu > li {
+  float: left;
+}
+
+/* line 30, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+/* line 35, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+/* line 40, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+/* Nav Menu Arrows */
+/* line 47, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+
+/* line 51, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 15px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 60, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+/* line 66, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+#nav-menu-container {
+  float: right;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  /* line 66, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+/* line 76, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  color: gray;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  outline: none;
+}
+
+/* line 87, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
+  color: #FF8600;
+}
+
+/* line 91, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu ul {
+  margin: 4px 0 0 15px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+/* line 95, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu ul li {
+  background: #fff;
+  border-top: 1px solid #f4f4f4;
+}
+
+/* line 98, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu ul li:first-child {
+  border-top: 0;
+}
+
+/* line 102, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu ul li:hover {
+  background: #f6f6f6;
+}
+
+/* line 105, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu ul li a {
+  color: #333;
+}
+
+/* line 111, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+.nav-menu ul ul {
+  margin: 0;
+}
+
+/* Mobile Nav Toggle */
+/* line 118, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+}
+
+/* line 131, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+#mobile-nav-toggle i {
+  color: #CECECE;
+}
+
+@media (max-width: 768px) {
+  /* line 118, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+
+/* Mobile Nav Styling */
+/* line 142, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(255, 255, 255, 0.8);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+/* line 154, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 159, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+#mobile-nav ul li {
+  position: relative;
+}
+
+/* line 161, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+#mobile-nav ul li a {
+  color: gray;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+/* line 171, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+#mobile-nav ul li a:hover {
+  color: #FF8600;
+}
+
+/* line 176, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+/* line 181, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* line 188, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #FF8600;
+}
+
+/* line 193, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+#mobile-nav ul .menu-item-active {
+  color: #FF8600;
+}
+
+/* line 199, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+/* line 212, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+/* line 215, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+/* line 219, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_nav.scss */
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Carousel
+--------------------------------------------------------------*/
+/* line 4, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider {
+  /* Imágenes slider inicio */
+  /*
+    .slider .section-slider .slider-six {
+        background: url(../img/slider-6.jpg) no-repeat center;
+        background-size: cover; 
+    }*/
+  /* Titulos slider */
+  /* Flechas del slider */
+  /* Flechas izquierda del slider */
+  /* Flechas derecha del slider */
+  /* Efecto cuando le dan click a las flechas del slider */
+  /* Flecha de ir a la siguiente sección */
+  /* Efecto hover flecha de ir a la siguiente sección */
+}
+
+/* line 6, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider {
+  overflow: hidden;
+}
+
+/* line 10, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider .slider-inner {
+  display: table;
+  left: 0;
+  position: relative;
+  top: 0;
+  transition: 1s ease;
+}
+
+/* line 18, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider .section-slider {
+  float: left;
+}
+
+/* line 22, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider .section-slider .img-slider {
+  align-items: center;
+  /*background: #202020 center center / cover no-repeat fixed;*/
+  /*background: #ffffff center center / cover no-repeat fixed;*/
+  display: flex;
+  filter: grayscale(20%);
+  height: 87vh;
+  justify-content: center;
+  width: 100%;
+  /*@media screen and (min-width: 1201px) {
+			height: 87vh;
+		}*/
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 22, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .slider .section-slider .img-slider {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* line 22, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .slider .section-slider .img-slider {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 22, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .slider .section-slider .img-slider {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* line 22, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .slider .section-slider .img-slider {
+    height: 30vh;
+  }
+}
+
+/* line 56, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider .section-slider .slider-one {
+  background: url(../img/slider-one.jpg) no-repeat center;
+  background-size: 100% 100%;
+}
+
+/* line 61, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider .section-slider .slider-two {
+  background: url(../img/slider-four.jpg) no-repeat center;
+  background-size: 100% 100%;
+  /*-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100%;*/
+}
+
+/* line 72, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider .section-slider .slider-three {
+  background: url(../img/slider-two.jpg) no-repeat center;
+  /*background-size: cover; */
+  background-size: 100% 100%;
+}
+
+/* line 78, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider .section-slider .slider-four {
+  background: url(../img/sueños7.png) no-repeat center;
+  /*background-size: cover; */
+  background-size: 100% 100%;
+}
+
+/* line 84, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider .section-slider .slider-five {
+  background: url(../img/slider-one.jpg) no-repeat center;
+  /*background-size: cover; */
+  background-size: 100% 100%;
+}
+
+/* line 97, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider .section-slider .title-slider {
+  color: #ffffff;
+  font: normal 4em 'Dancing Script', sans-serif;
+  position: relative;
+  text-align: center;
+  text-shadow: 1px 1px 10px #000000;
+  top: 15px;
+  user-select: none;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 97, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .slider .section-slider .title-slider {
+    font-size: 52px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* line 97, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .slider .section-slider .title-slider {
+    font-size: 46px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 97, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .slider .section-slider .title-slider {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* line 97, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .slider .section-slider .title-slider {
+    font-size: 24px;
+  }
+}
+
+/* line 124, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider-nav .arrows {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  padding: 1em;
+  position: absolute;
+  text-shadow: 1px 1px 5px #000000;
+  top: 150%;
+  transition: 0.3s ease all;
+  z-index: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 124, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .slider-nav .arrows {
+    top: 139%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* line 124, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .slider-nav .arrows {
+    top: 133%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 124, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .slider-nav .arrows {
+    top: 128%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* line 124, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .slider-nav .arrows {
+    top: 123%;
+  }
+}
+
+/* line 154, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider-nav .prev {
+  border-radius: 50% 0 0 50%;
+  left: 10px;
+}
+
+/* line 160, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider-nav .next {
+  border-radius: 0 50% 50% 0;
+  right: 10px;
+}
+
+/* line 166, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider-nav .prev:active {
+  transform: translateX(-5px);
+}
+
+/* line 170, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .slider-nav .next:active {
+  transform: translateX(5px);
+}
+
+/* line 175, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .move-slider {
+  animation: jump-arrow 2.5s infinite;
+  bottom: 2%;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  left: 0;
+  position: absolute;
+  top: 195%;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  z-index: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 175, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider {
+    top: 165%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* line 175, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider {
+    top: 153%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 175, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider {
+    top: 143%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* line 175, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider {
+    top: 134%;
+  }
+}
+
+/* line 205, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .move-slider .arrow-down-slider {
+  cursor: pointer;
+}
+
+/* line 211, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+.ctn-slider .move-slider .arrow-down-slider:hover,
+.ctn-slider .move-slider .arrow-down-slider:focus,
+.ctn-slider .move-slider .arrow-down-slider:active {
+  color: #ffffff;
+  /* Animación de las flechas que saltan para señalar a la siguiente sección */
+  /* Responsive max-width and min-width */
+  /* Responsive flechas y título del slider */
+  /* Efecto hover de las flechas del slider (desde mobiles grandes hasta pc) */
+}
+
+@keyframes jump-arrow {
+  0%,
+  20%,
+  55%,
+  80%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    transform: translate3d(0, -15px, 0);
+  }
+  70% {
+    transform: translate3d(0, -10px, 0);
+  }
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+}
+
+@media only screen and (min-width: 761px) and (max-width: 960px) {
+  /* line 211, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider .arrow-down-slider:hover,
+  .ctn-slider .move-slider .arrow-down-slider:focus,
+  .ctn-slider .move-slider .arrow-down-slider:active {
+    /* Títulos del slider */
+  }
+  /* line 245, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider .arrow-down-slider:hover .slider .section-slider .title-slider,
+  .ctn-slider .move-slider .arrow-down-slider:focus .slider .section-slider .title-slider,
+  .ctn-slider .move-slider .arrow-down-slider:active .slider .section-slider .title-slider {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 760px) {
+  /* line 211, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider .arrow-down-slider:hover,
+  .ctn-slider .move-slider .arrow-down-slider:focus,
+  .ctn-slider .move-slider .arrow-down-slider:active {
+    /* Títulos del slider */
+    /* Flechas slider */
+  }
+  /* line 254, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider .arrow-down-slider:hover .slider .section-slider .title-slider,
+  .ctn-slider .move-slider .arrow-down-slider:focus .slider .section-slider .title-slider,
+  .ctn-slider .move-slider .arrow-down-slider:active .slider .section-slider .title-slider {
+    font-size: 1.5em;
+    top: 0;
+  }
+  /* line 260, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider .arrow-down-slider:hover .slider-nav .arrows,
+  .ctn-slider .move-slider .arrow-down-slider:focus .slider-nav .arrows,
+  .ctn-slider .move-slider .arrow-down-slider:active .slider-nav .arrows {
+    padding: 0.5em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* line 211, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider .arrow-down-slider:hover,
+  .ctn-slider .move-slider .arrow-down-slider:focus,
+  .ctn-slider .move-slider .arrow-down-slider:active {
+    /* Títulos del slider */
+    /* Flechas slider */
+  }
+  /* line 268, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider .arrow-down-slider:hover .slider .section-slider .title-slider,
+  .ctn-slider .move-slider .arrow-down-slider:focus .slider .section-slider .title-slider,
+  .ctn-slider .move-slider .arrow-down-slider:active .slider .section-slider .title-slider {
+    font-size: 1em;
+    top: 0;
+  }
+  /* line 274, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider .arrow-down-slider:hover .slider-nav .arrows,
+  .ctn-slider .move-slider .arrow-down-slider:focus .slider-nav .arrows,
+  .ctn-slider .move-slider .arrow-down-slider:active .slider-nav .arrows {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  /* line 278, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider .arrow-down-slider:hover .slider-nav .prev,
+  .ctn-slider .move-slider .arrow-down-slider:focus .slider-nav .prev,
+  .ctn-slider .move-slider .arrow-down-slider:active .slider-nav .prev {
+    left: 5px;
+  }
+  /* line 282, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider .arrow-down-slider:hover .slider-nav .next,
+  .ctn-slider .move-slider .arrow-down-slider:focus .slider-nav .next,
+  .ctn-slider .move-slider .arrow-down-slider:active .slider-nav .next {
+    right: 5px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  /* line 290, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_carousel.scss */
+  .ctn-slider .move-slider .arrow-down-slider:hover .slider-nav .arrows:hover,
+  .ctn-slider .move-slider .arrow-down-slider:hover .slider-nav .arrows:focus,
+  .ctn-slider .move-slider .arrow-down-slider:focus .slider-nav .arrows:hover,
+  .ctn-slider .move-slider .arrow-down-slider:focus .slider-nav .arrows:focus,
+  .ctn-slider .move-slider .arrow-down-slider:active .slider-nav .arrows:hover,
+  .ctn-slider .move-slider .arrow-down-slider:active .slider-nav .arrows:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+/* line 4, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer {
+  float: left;
+  width: 100%;
+  /*background:#212121;*/
+  background: #696A6E;
+  /*background: #4c4c4c;*/
+  color: #fff;
+  margin: 0;
+  padding: 40px 0 0 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  /* footer social icons */
+  /*
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}*/
+  /* Align center */
+}
+
+@media (max-width: 768px) {
+  /* line 4, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+  footer {
+    padding: 18px 0 0 0;
+  }
+}
+
+/* line 21, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer .verybottom {
+  padding: 30px 0 10px 0;
+}
+
+/* line 27, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+/* line 33, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+/* line 38, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer .social-network a.icoYoutube:hover {
+  background-color: #FF0000;
+}
+
+/* line 41, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer .social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+/* line 44, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer .social-network a.icoTwitter:hover {
+  background-color: #33ccff;
+}
+
+/* line 47, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer .social-network a.icoInstagram:hover {
+  background-color: #E93C5B;
+}
+
+/* line 50, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer .social-network a.icoVimeo:hover {
+  background-color: #0590B8;
+}
+
+/* line 53, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer .social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+/* line 56, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer .social-network a.icoYoutube:hover i, footer .social-network a.icoFacebook:hover i, footer .social-network a.icoTwitter:hover i,
+footer .social-network a.icoInstagram:hover i, footer .social-network a.icoVimeo:hover i, footer .social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+/* line 60, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer a.socialIcon:hover, footer .socialHoverClass {
+  color: #44BCDD;
+}
+
+/* line 64, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer .social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+
+/* line 76, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer .social-circle li i {
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+}
+
+/* line 93, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer .social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+/* line 103, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer .aligncenter {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 108, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer .aligncenter i {
+  text-align: center;
+}
+
+/* line 112, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_footer.scss */
+footer .aligncenter {
+  margin-bottom: 50px;
+}
+
+/* scroll to top */
+/* line 2, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_scrollup.scss */
+.scrollup {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  bottom: 40px;
+  right: 20px;
+  text-align: center;
+}
+
+/* line 10, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_scrollup.scss */
+.scrollup i {
+  /*background: #3FFFD7;*/
+  color: #CECECE;
+  font-size: 30px;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50%;
+  /*border:2px solid #2FBFA1;*/
+  border: 2px solid #CECECE;
+  /*-webkit-box-shadow:inset 0 0 15px 0 rgba(0,0,0,0.3);
+        box-shadow:inset 0 0 15px 0 rgba(0,0,0,0.3);
+        text-shadow: 0 1px 0 rgba(255,255,255,0.3);*/
+}
+
+/* line 27, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_scrollup.scss */
+.scrollup i:hover {
+  background: #FF8600;
+}
+
+/*-------------------------------
+# Contact Section
+--------------------------------*/
+/* line 4, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact_main.scss */
+#contact-main {
+  background: #f7f7f7;
+  padding: 60px 0;
+}
+
+@media (max-width: 768px) {
+  /* line 4, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact_main.scss */
+  #contact-main {
+    padding: 30px;
+  }
+}
+
+/* line 12, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact_main.scss */
+#contact-main .info {
+  color: #333333;
+}
+
+/* line 15, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact_main.scss */
+#contact-main .info .col-md-4 {
+  text-align: center;
+}
+
+/* line 18, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact_main.scss */
+#contact-main .info .col-md-4 i {
+  font-size: 28px;
+  color: #9DD244;
+}
+
+@media (max-width: 450px) {
+  /* line 18, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact_main.scss */
+  #contact-main .info .col-md-4 i {
+    font-size: 20px;
+  }
+}
+
+/* line 27, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact_main.scss */
+#contact-main .info .col-md-4 p {
+  font-size: 16px;
+  color: #277249;
+}
+
+@media (max-width: 450px) {
+  /* line 27, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact_main.scss */
+  #contact-main .info .col-md-4 p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 27, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact_main.scss */
+  #contact-main .info .col-md-4 p {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 42, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact_main.scss */
+#contact-main .info .col-md-4 .fa {
+  margin-right: 10px;
+}
+
+/* line 1, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact.scss */
+#contact {
+  padding: 20px;
+}
+
+/* line 4, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact.scss */
+#contact .section-title {
+  font-size: 36px;
+  color: #277249;
+  /*text-transform: uppercase;*/
+  text-align: center;
+  font-weight: 800;
+  font-family: "Ubuntu", sans-serif;
+}
+
+@media (min-width: 20px) and (max-width: 450px) {
+  /* line 4, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact.scss */
+  #contact .section-title {
+    font-size: 28px;
+  }
+}
+
+/* line 20, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact.scss */
+#contact .section-description {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* line 25, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact.scss */
+#contact .section-title-divider {
+  width: 50px;
+  height: 3px;
+  background: #9DD244;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* line 35, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact.scss */
+#contact .form #sendmessage {
+  color: #FF8600;
+  border: 1px solid #FF8600;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* line 45, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact.scss */
+#contact .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* line 55, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact.scss */
+#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+  display: block;
+}
+
+/* line 59, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact.scss */
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* line 67, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact.scss */
+#contact .form input, #contact .form textarea {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* line 73, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact.scss */
+#contact .form button[type="submit"] {
+  background: #FF8600;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+/* line 79, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_contact.scss */
+#contact .form button[type="submit"]:hover {
+  background: #ff9e33;
+}
+
+/* line 1, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+main {
+  width: 900px;
+  /*box-shadow:1px 1px 5px 1px rgba(0,0,0,0.5);*/
+  margin: auto;
+  padding: 0;
+  height: 380px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  /*.borrar-flotacion {
+    float: none;
+    clear: both;
+  }*/
+  /*ul li:last-child{background:transparent;opacity:1}*/
+  /*.active{opacity:1}*/
+  /* table, th, td {
+      border: 1px solid #808281;
+      border-collapse: collapse;  
+  }*/
+  /* .first_col:hover {
+    font-size: 18px;
+  }*/
+  /*  tr:hover {
+    background-color: #bfbfbf;
+  }*/
+  /*
+  (tr:first):hover {
+    background-color: #ffffff;
+  }*/
+  /*table#t01 {
+      width: 100%;    
+      background-color: #f1f1c1;
+  }*/
+  /*article img{
+    width: 270px;    
+    float: left;
+    margin: 15px;
+    
+  }*/
+  /* @media (min-width: 768px) {
+   
+    ul {
+    width: 700px;
+    text-align: center;
+    }
+
+  }*/
+  /*
+  @media (max-width: 992px) {
+    max-width: 700px;
+    overflow-y: auto;
+    _overflow: auto;
+    margin: 0 0 1em;
+  }*/
+  /*
+
+  @media (max-width: 768px) {
+    max-width: 550px;
+    overflow-y: auto;
+    _overflow: auto;
+    margin: 0 0 1em;
+  }
+
+  @media (max-width: 576px) {
+				
+    max-width: 350px;
+    overflow-y: auto;
+    _overflow: auto;
+    margin: 0 0 1em;
+    
+  }*/
+}
+
+/* line 2, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+main h1 {
+  color: #277249;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  /*text-transform: uppercase;*/
+}
+
+@media (min-width: 20px) and (max-width: 450px) {
+  /* line 2, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+  main h1 {
+    font-size: 28px;
+  }
+}
+
+/* line 28, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+main .fa {
+  font-size: 18px;
+}
+
+/* line 32, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+main .fa-check-circle {
+  color: #459d55;
+}
+
+/* line 36, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+main .fa-plus-circle {
+  color: #f7ae2d;
+}
+
+/* line 40, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+main .fa-times-circle {
+  color: #a6a6a6;
+}
+
+/* line 44, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+main ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  grid-gap: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 53, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+main ul li {
+  display: block;
+  /*background:#444;*/
+  background: #FF8600;
+  font-weight: 500;
+  text-align: center;
+  padding: 8px;
+  /*opacity:0.7;*/
+  color: white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+/* line 70, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+main section div {
+  display: none;
+  /*height:100px;*/
+  /*padding:8px;*/
+}
+
+/* line 78, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+main table {
+  width: 100%;
+}
+
+/* line 87, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+main table {
+  /*order: 1px solid #808281;*/
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+}
+
+/* line 93, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+main th,
+main td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 99, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+main .first_col {
+  text-align: left;
+}
+
+/* line 107, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+main tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  /* line 1, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_planes.scss */
+  main {
+    width: 100%;
+    overflow-y: auto;
+    _overflow: auto;
+    margin: 0 0 1em;
+  }
+}
+
+/*--------------------------------------------------------------
+# Quienes somos
+--------------------------------------------------------------*/
+/* line 4, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_about.scss */
+#about {
+  margin-top: 60px;
+  /*color: #9699a6;*/
+  color: #696A6E;
+  font-family: "Raleway", sans-serif;
+}
+
+/* line 11, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_about.scss */
+#about .about-info {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 16, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_about.scss */
+#about .section-padding {
+  padding: 60px 0px;
+  margin-top: 40px;
+}
+
+/* line 21, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_about.scss */
+#about .header-h {
+  color: #277249;
+  font-size: 36px;
+  /*font-family: 'Satisfy', sans-serif;*/
+  /*font-family: 'Ubuntu', sans-serif;*/
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  /*text-transform: uppercase;*/
+}
+
+/* line 31, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_about.scss */
+#about .heading {
+  /*font-family: 'Satisfy', sans-serif;*/
+  font-family: "Ubuntu", sans-serif;
+  color: #277249;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* line 39, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_about.scss */
+#about p {
+  font-size: 18px;
+}
+
+/* line 43, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_about.scss */
+#about li {
+  font-size: 16px;
+}
+
+/* line 47, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_about.scss */
+#about .details-list {
+  margin-top: 20px;
+}
+
+/* line 50, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_about.scss */
+#about .details-list ul li i {
+  margin-right: 10px;
+  color: #277249;
+}
+
+/* line 55, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_about.scss */
+#about ol, #about ul {
+  list-style: none;
+}
+
+/* line 59, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_about.scss */
+#about .details-list ul li i {
+  margin-right: 10px;
+  color: #277249;
+}
+
+@media (min-width: 20px) and (max-width: 450px) {
+  /* line 4, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_about.scss */
+  #about {
+    /*
+    .about-info, .mr-15{
+        margin-bottom: 15px;
+    }*/
+  }
+  /* line 66, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_about.scss */
+  #about .header-h {
+    font-size: 28px;
+  }
+  /* line 70, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_about.scss */
+  #about body {
+    font-size: 14px;
+  }
+}
+
+/* --- Servicios --- */
+/* line 2, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+.servicios {
+  margin-top: 20px;
+  /*font-family:'Montserrat',sans-serif;*/
+  /*.referencias {
+		font-family: 'Shadows Into Light', cursive;
+		text-align: center;
+		.row {
+			justify-content: right;
+			justify-self: right;
+		}
+	}*/
+}
+
+/* line 7, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+.servicios p {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  /*color:#777;*/
+  color: #696A6E;
+  font-weight: 500;
+  /*overflow-x:hidden;*/
+}
+
+/* line 18, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+.servicios h1, .servicios h2, .servicios h3, .servicios h4, .servicios h5, .servicios h6 {
+  color: #277249;
+  font-size: 36px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  /*text-transform: uppercase;*/
+  text-align: center;
+  /*color:#333;*/
+}
+
+@media (min-width: 20px) and (max-width: 450px) {
+  /* line 18, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+  .servicios h1, .servicios h2, .servicios h3, .servicios h4, .servicios h5, .servicios h6 {
+    font-size: 28px;
+  }
+}
+
+/* line 45, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+.servicios .hi-icon-effect {
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 52, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+.servicios .hi-icon-effect:hover {
+  -webkit-transition: color 300ms, background-color 300ms;
+  -moz-transition: color 300ms, background-color 300ms;
+  -o-transition: color 300ms, background-color 300ms;
+  transition: color 300ms, background-color 300ms;
+}
+
+/* line 59, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+.servicios .hi-icon-effect i.fa:hover {
+  background: #fff;
+  /*color: #92DD03;*/
+  color: #9DD244;
+  -webkit-transition: color 300ms, background-color 300ms;
+  -moz-transition: color 300ms, background-color 300ms;
+  -o-transition: color 300ms, background-color 300ms;
+  transition: color 300ms, background-color 300ms;
+}
+
+/* line 69, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+.servicios .hi-icon-effect i {
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #fff;
+  padding: 50px;
+  /*background:#92DD03;*/
+  background: #9DD244;
+  border-radius: 50%;
+}
+
+/* line 80, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+.servicios blockquote {
+  font-style: italic;
+  margin: 0 0 0px 0;
+  padding: 20px 70px 10px;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  border: 0;
+}
+
+/* line 89, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+.servicios blockquote:before {
+  display: blockblockquote;
+  content: "\201C";
+  font-size: 100px;
+  position: absolute;
+  /*text-align: center;*/
+  left: 220px;
+  top: -30px;
+  /*color:#92DD03 ;*/
+  color: #9DD244;
+  font-family: Georgia;
+}
+
+@media (max-width: 576px) {
+  /* line 89, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+  .servicios blockquote:before {
+    font-size: 50px;
+    left: 0px;
+    top: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 89, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+  .servicios blockquote:before {
+    left: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 89, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+  .servicios blockquote:before {
+    left: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 89, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+  .servicios blockquote:before {
+    left: 120px;
+  }
+}
+
+/* line 120, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+.servicios blockquote cite {
+  /*color:#92DD03;*/
+  color: #277249;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* line 128, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+.servicios blockquote cite .fa {
+  color: #9DD244;
+}
+
+/* line 132, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+.servicios blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+/* line 137, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+#separador {
+  width: 500px;
+  height: 3px;
+  background: #FF8600;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  /* line 137, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_servicios.scss */
+  #separador {
+    width: 200px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Aliados
+--------------------------------------------------------------*/
+/* line 7, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_aliados.scss */
+#partner .title-aliados {
+  margin-bottom: 10px;
+  margin-top: 60px;
+}
+
+/* line 11, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_aliados.scss */
+#partner .title-aliados #h-bold {
+  color: #277249;
+  font-size: 36px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  /*text-transform: uppercase;*/
+}
+
+@media (min-width: 20px) and (max-width: 450px) {
+  /* line 11, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_aliados.scss */
+  #partner .title-aliados #h-bold {
+    font-size: 28px;
+  }
+}
+
+/* line 25, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_aliados.scss */
+#partner .title-aliados img {
+  width: 180px;
+}
+
+@media (max-width: 450px) {
+  /* line 32, D:/Mari/Curso Desarrollo Web/Trabajo final/VidaSeguros/scss/_aliados.scss */
+  #partner img {
+    width: 120px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

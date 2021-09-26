@@ -1,0 +1,299 @@
+/*--------------------------------------------------------------
+# Carousel
+--------------------------------------------------------------*/
+.ctn-slider {
+
+    .slider {
+        overflow: hidden;
+    }
+
+    .slider .slider-inner {
+        display: table;
+        left: 0;
+        position: relative;
+        top: 0;
+        transition: 1s ease;
+    }
+
+    .slider .section-slider {
+        float: left;
+    }
+
+    .slider .section-slider .img-slider {
+        align-items: center;
+        /*background: #202020 center center / cover no-repeat fixed;*/
+        /*background: #ffffff center center / cover no-repeat fixed;*/
+        display: flex;
+        filter: grayscale(20%);
+        height: 87vh;
+        justify-content: center;
+		width: 100%;
+		
+		/*@media screen and (min-width: 1201px) {
+			height: 87vh;
+		}*/
+
+		@media screen and (max-width: 1200px) {
+			height: 60vh;
+		}
+
+		@media screen and (max-width: 992px) {
+			height: 50vh;
+		}
+
+		@media screen and (max-width: 768px) {
+			height: 40vh;
+		}
+
+		@media screen and (max-width: 576px) {
+			height: 30vh;
+		}
+
+    }
+
+    /* Imágenes slider inicio */
+    
+    .slider .section-slider .slider-one {
+    background: url(../img/slider-one.jpg) no-repeat center;
+	background-size: 100% 100%;
+    }
+
+    .slider .section-slider .slider-two {
+    background: url(../img/slider-four.jpg) no-repeat center;
+	background-size: 100% 100%;
+	/*-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100%;*/
+	}
+
+    .slider .section-slider .slider-three {
+    background: url(../img/slider-two.jpg) no-repeat center;
+	/*background-size: cover; */
+	background-size: 100% 100%;
+    }
+
+    .slider .section-slider .slider-four {
+        background: url(../img/sueños7.png) no-repeat center;
+		/*background-size: cover; */
+		background-size: 100% 100%;
+    }
+
+    .slider .section-slider .slider-five {
+        background: url(../img/slider-one.jpg) no-repeat center;
+		/*background-size: cover; */
+		background-size: 100% 100%;
+    }
+/*
+    .slider .section-slider .slider-six {
+        background: url(../img/slider-6.jpg) no-repeat center;
+        background-size: cover; 
+    }*/
+
+
+/* Titulos slider */
+.slider .section-slider .title-slider {
+	color: #ffffff;
+	font: normal 4em 'Dancing Script', sans-serif;
+	position: relative;
+	text-align: center;
+	text-shadow: 1px 1px 10px #000000;
+	top: 15px;
+	user-select: none;
+
+	@media screen and (max-width: 1200px) {
+		font-size: 52px;
+	}
+
+	@media screen and (max-width: 992px) {
+		font-size: 46px;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 34px;
+	}
+
+	@media screen and (max-width: 576px) {
+		font-size: 24px;
+	}
+}
+
+/* Flechas del slider */
+.slider-nav .arrows {
+	background-color: rgba(255, 255, 255, 0.3);
+	color: #ffffff;
+	cursor: pointer;
+	display: none;
+	padding: 1em;
+    position: absolute;
+	text-shadow: 1px 1px 5px #000000;
+	top: 150%;
+	transition: 0.3s ease all;
+	z-index: 600;
+
+	@media screen and (max-width: 1200px) {
+		top: 139%;
+	}
+
+	@media screen and (max-width: 992px) {
+		top: 133%;
+	}
+
+	@media screen and (max-width: 768px) {
+		top: 128%;
+	}
+
+	@media screen and (max-width: 576px) {
+		top: 123%;
+	}
+}
+
+/* Flechas izquierda del slider */
+.slider-nav .prev {
+	border-radius: 50% 0 0 50%;
+	left: 10px;
+}
+
+/* Flechas derecha del slider */
+.slider-nav .next {
+	border-radius: 0 50% 50% 0;
+	right: 10px;
+}
+
+/* Efecto cuando le dan click a las flechas del slider */
+.slider-nav .prev:active {
+	transform: translateX(-5px);
+}
+
+.slider-nav .next:active {
+	transform: translateX(5px);
+}
+
+/* Flecha de ir a la siguiente sección */
+.move-slider {
+	animation: jump-arrow 2.5s infinite;
+	bottom: 2%;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 20px;
+	left: 0;
+	position: absolute;
+	top: 195%;
+	text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	width: 100%;
+	z-index: 600;
+
+	@media screen and (max-width: 1200px) {
+		top: 165%;
+	}
+
+	@media screen and (max-width: 992px) {
+		top: 153%;
+	}
+
+	@media screen and (max-width: 768px) {
+		top: 143%;
+	}
+
+	@media screen and (max-width: 576px) {
+		top: 134%;
+	}
+}
+
+.move-slider .arrow-down-slider {
+	cursor: pointer;
+}
+
+/* Efecto hover flecha de ir a la siguiente sección */
+
+.move-slider .arrow-down-slider:hover,
+.move-slider .arrow-down-slider:focus,
+.move-slider .arrow-down-slider:active {
+	color: #ffffff;
+
+
+/* Animación de las flechas que saltan para señalar a la siguiente sección */
+
+@keyframes jump-arrow {
+	0%,
+	20%,
+	55%,
+	80%,
+	100% {
+	  transform: translate3d(0, 0, 0);
+	}
+
+	40% {
+		transform: translate3d(0, -15px, 0);
+	}
+
+	70% {
+    transform: translate3d(0, -10px, 0);
+	}
+
+	90% {
+		transform: translate3d(0, -5px, 0);
+	}
+}
+
+/* Responsive max-width and min-width */
+/* Responsive flechas y título del slider */
+@media only screen and (min-width: 761px) and (max-width: 960px) {
+	/* Títulos del slider */
+	.slider .section-slider .title-slider {
+		font-size: 2em;
+	}
+
+
+}
+
+@media only screen and (min-width: 501px) and (max-width: 760px) {
+	/* Títulos del slider */
+	.slider .section-slider .title-slider {
+		font-size: 1.5em;
+		top: 0;
+	}
+
+	/* Flechas slider */
+	.slider-nav .arrows {
+  	padding: 0.5em;
+	}	
+
+}
+
+@media screen and (max-width: 500px) {
+	/* Títulos del slider */
+	.slider .section-slider .title-slider {
+		font-size: 1em;
+		top: 0;
+	}
+
+	/* Flechas slider */
+	.slider-nav .arrows {
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	.slider-nav .prev {
+		left: 5px;
+	}
+
+	.slider-nav .next {
+		right: 5px;
+	}
+
+}
+
+/* Efecto hover de las flechas del slider (desde mobiles grandes hasta pc) */
+@media screen and (min-width: 500px) {
+	.slider-nav .arrows:hover,
+	.slider-nav .arrows:focus {
+		background-color: rgba(255, 255, 255, 0.5);
+		color: rgba(0, 0, 0, 0.7);
+		text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	}
+}
+}
+}
+    
